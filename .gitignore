@@ -1,0 +1,8 @@
+# git ignore file
+[Oo]bj/
+[Bb]in/
+*.user
+*.suo
+*.[Cc]ache
+[Pp]ackages/
+*_Resharper.*
