@@ -108,6 +108,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BlogController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,6 +119,29 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\fonts\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="Content\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\fonts\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\backgrounds\wild_oliva.png" />
+    <Content Include="Content\images\backgrounds\wild_oliva_blue_dark.png" />
+    <Content Include="Content\images\backgrounds\wild_oliva_blue_light.png" />
+    <Content Include="Content\images\backgrounds\wild_oliva_dark.png" />
+    <Content Include="Content\images\backgrounds\wild_oliva_light.png" />
+    <Content Include="Content\images\backgrounds\wild_oliva_light_head.png" />
+    <Content Include="Content\images\favicons\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="Content\images\favicons\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="Content\images\favicons\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="Content\images\favicons\apple-touch-icon-precomposed.png" />
+    <Content Include="Content\images\favicons\favicon.png" />
+    <Content Include="Content\images\responsive.png" />
+    <Content Include="Content\images\restart_logo.png" />
+    <Content Include="Content\images\star.png" />
+    <Content Include="Content\images\ui.totop.png" />
+    <Content Include="Content\js\jquery-1.9.0.min.js" />
+    <Content Include="Content\js\modernizr.custom.48287.js" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -129,11 +154,30 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fonts\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\font-awesome\font\FontAwesome.otf" />
+    <Content Include="Content\fonts\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="Content\fonts\font-awesome\less\font-awesome.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\Search.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

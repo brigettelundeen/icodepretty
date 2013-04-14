@@ -13,10 +13,21 @@ namespace ICodePretty
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // /Blog/friendly-name
+
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                name: "Blog", // route name
+                url: "blog/{name}", // URL with params
+                defaults: new { controller = "Blog", action = "Search", name = UrlParameter.Optional } // param defaults
+            );
+
+
+            // /Home
+
+            routes.MapRoute(
+                name: "Default", // route name
+                url: "{controller}/{action}/{id}", // URL with params
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional } // param defaults
             );
         }
     }
