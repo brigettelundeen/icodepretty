@@ -3,6 +3,6 @@
 [Bb]in/
 *.user
 *.suo
+*.dll
 *.[Cc]ache
-[Pp]ackages/
 *_Resharper.*
